@@ -1,0 +1,44 @@
+.weight-chart-container {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.weight-chart-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recharts-wrapper {
+  margin: 0 auto;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 300px;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+.recharts-tooltip-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .weight-chart-container {
+    padding: 1rem;
+  }
+
+  .recharts-wrapper {
+    min-height: 250px;
+  }
+} 

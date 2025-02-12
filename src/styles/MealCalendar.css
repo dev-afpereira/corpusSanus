@@ -1,0 +1,81 @@
+.meal-calendar {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.day-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 250px;
+}
+
+.day-card h3 {
+  margin: 0 0 1rem;
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.meal-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meal-slot {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.meal-slot h4 {
+  margin: 0 0 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.meal-slot input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meal-slot input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+@media (max-width: 1400px) {
+  .week-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .week-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .week-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .day-card {
+    min-width: auto;
+  }
+} 

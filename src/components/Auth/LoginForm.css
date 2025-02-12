@@ -1,0 +1,60 @@
+@import '../../styles/variables.css';
+
+.login-form {
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.error-message {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #fee2e2;
+  color: var(--error);
+  border-radius: 8px;
+  text-align: center;
+} 

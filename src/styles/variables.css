@@ -1,0 +1,17 @@
+:root {
+  --primary: #3b82f6;      /* Azul principal */
+  --primary-dark: #2563eb; /* Azul escuro para hover */
+  --accent: #dc2626;       /* Vermelho para destaques */
+  --accent-dark: #b91c1c;  /* Vermelho escuro para hover */
+  --success: #10b981;      /* Verde para status positivos */
+  --warning: #f59e0b;      /* Amarelo para alertas */
+  --error: #ef4444;        /* Vermelho para erros */
+  --text-primary: #1f2937; /* Texto principal */
+  --text-secondary: #4b5563; /* Texto secundário */
+  --background: #f3f4f6;   /* Fundo geral */
+  --white: #ffffff;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+} 

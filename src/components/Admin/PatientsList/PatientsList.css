@@ -1,0 +1,95 @@
+@import '../../../styles/variables.css';
+
+.patients-list {
+  width: 100%;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.add-button {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.patients-table th {
+  background: var(--gray-100);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.status.active {
+  background: #e3f9e5;
+  color: var(--success);
+}
+
+.status.pending {
+  background: #fff3c4;
+  color: var(--warning);
+}
+
+.status.inactive {
+  background: #fee2e2;
+  color: var(--error);
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button.edit {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.action-button.delete {
+  background: var(--error);
+  color: var(--white);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+} 

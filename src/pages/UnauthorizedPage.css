@@ -1,0 +1,34 @@
+.unauthorized-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.unauthorized-page h1 {
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.unauthorized-page p {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.unauthorized-page button {
+  padding: 0.8rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unauthorized-page button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+} 

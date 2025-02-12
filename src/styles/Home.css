@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #1a1a1a;
+  --accent: #FF6B6B;
+  --text: #2D3436;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.program-overview {
+  text-align: center;
+}
+
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.phase-card {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.phase-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.phase-card p {
+  color: #666;
+}
+
+.cta-section {
+  margin-top: 3rem;
+}
+
+.start-button {
+  display: inline-block;
+  background: #2c5282;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background: #2a4365;
+}
+
+.home-container {
+  min-height: 100vh;
+  background-color: var(--light);
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: -1px;
+}
+
+.login-button {
+  padding: 0.8rem 2rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+}
+
+.nav-buttons button {
+  margin-left: 1.5rem;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-buttons button:first-child {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.nav-buttons button:last-child {
+  background-color: var(--accent);
+  color: white;
+}
+
+.nav-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+  margin-top: 80px;
+  height: 85vh;
+}
+
+.carousel-item {
+  position: relative;
+  height: 85vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.carousel-item h2 {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 600px;
+  letter-spacing: -1px;
+}
+
+.benefits-section {
+  padding: 6rem 4rem;
+  background-color: white;
+}
+
+.benefits-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  letter-spacing: -1px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.benefit-card p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.cta-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 2rem auto;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+}
+
+.home-footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.protocol-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  overflow: hidden;
+}
+
+.protocol-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.protocol-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.protocol-header p {
+  font-size: 1.2rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.protocol-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-phase {
+  width: 100%;
+}
+
+.phase-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.phase-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.phase-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.phase-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.phase-duration {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background: rgba(255,107,107,0.1);
+  color: var(--accent);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.phase-description {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.phase-highlights {
+  list-style: none;
+  padding: 0;
+}
+
+.phase-highlights li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text);
+}
+
+.phase-highlights li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.protocol-note {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255,107,107,0.1);
+  border-radius: 12px;
+}
+
+.protocol-note p {
+  color: var(--accent);
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 1400px) {
+  .protocol-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .protocol-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-nav {
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .login-button {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .carousel-item h2 {
+    font-size: 2rem;
+    bottom: 20%;
+  }
+  
+  .benefits-section {
+    padding: 4rem 2rem;
+  }
+
+  .benefits-section h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .protocol-timeline {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+  }
+
+  .protocol-section {
+    padding: 4rem 1rem;
+  }
+}

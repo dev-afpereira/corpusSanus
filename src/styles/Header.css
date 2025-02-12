@@ -1,0 +1,107 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar-expanded .header {
+  left: 240px;
+}
+
+.header-left, .header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.title-corpus {
+  color: #2c5282;
+}
+
+.title-sanus {
+  color: #4299e1;
+  margin-left: 4px;
+}
+
+.logout-button {
+  background: transparent;
+  border: none;
+  color: #718096;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.logout-button:hover {
+  color: #2c5282;
+}
+
+.auth-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.auth-link {
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.auth-link:hover {
+  color: #2c5282;
+  background: rgba(44, 82, 130, 0.1);
+}
+
+.auth-button {
+  background: transparent;
+  border: none;
+  color: #718096;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.auth-button:hover {
+  color: #2c5282;
+  background: rgba(44, 82, 130, 0.1);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+  }
+} 
